@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "736573713760",
+    "firebase_url": "https://eugloh-app-759d4-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "eugloh-app-759d4",
+    "storage_bucket": "eugloh-app-759d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736573713760:android:d9420ea01bfab5a8c80205",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "736573713760-5gs9comoq0tcsu7ahln16u34n5n2dajr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-TSQPWkLdQynvWDx4LZcnnfYYrg258ZE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "736573713760-5gs9comoq0tcsu7ahln16u34n5n2dajr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

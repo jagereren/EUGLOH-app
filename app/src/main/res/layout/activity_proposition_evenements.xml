@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PageNews">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/img2" />
+
+        <EditText
+            android:id="@+id/editTextTitreEvents"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/titre"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextLocalisationEvents"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="@string/localisation"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextGroupeEvents"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="@string/groupe_cible"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextHostEvents"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="@string/host"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextDateEvents"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Date"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextDateLimiteEvents"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="@string/date_limite"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextDescriptionEvents"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="@string/description"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/buttonProposerEvent"
+            android:layout_width="352dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:elevation="4dp"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"
+            android:text="@string/proposer_events"
+            android:textColor="#fff"
+            app:backgroundTint="@color/light_blue_900" />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/boutonMenu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="16dp"
+    android:clickable="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:srcCompat="@drawable/ic_baseline_add_24" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/boutonEvents"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:clickable="true"
+    android:visibility="invisible"
+    app:layout_constraintBottom_toTopOf="@+id/boutonMenu"
+    app:layout_constraintEnd_toEndOf="@+id/boutonMenu"
+    app:srcCompat="@drawable/ic_baseline_event_24" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/boutonNews"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:clickable="true"
+    android:visibility="invisible"
+    app:layout_constraintBottom_toTopOf="@+id/boutonEvents"
+    app:layout_constraintEnd_toEndOf="@+id/boutonEvents"
+    app:srcCompat="@drawable/ic_baseline_newspaper_24" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/boutonPropositionEvent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:clickable="true"
+    android:visibility="invisible"
+    app:layout_constraintBottom_toBottomOf="@+id/boutonMenu"
+    app:layout_constraintEnd_toStartOf="@+id/boutonMenu"
+    app:srcCompat="@drawable/ic_edit_calendar_fill0_wght400_grad0_opsz48" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/boutonPropositionNews"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:clickable="true"
+    android:visibility="invisible"
+    app:layout_constraintBottom_toBottomOf="@+id/boutonPropositionEvent"
+    app:layout_constraintEnd_toStartOf="@+id/boutonPropositionEvent"
+    app:srcCompat="@drawable/ic_post_add_fill0_wght400_grad0_opsz48" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/boutonVerifierEvent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:clickable="true"
+    android:visibility="invisible"
+    app:layout_constraintBottom_toBottomOf="@+id/boutonPropositionNews"
+    app:layout_constraintEnd_toStartOf="@+id/boutonPropositionNews"
+    app:srcCompat="@drawable/ic_event_available_fill0_wght400_grad0_opsz48" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/boutonVerifierNews"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:clickable="true"
+    android:visibility="invisible"
+    app:layout_constraintBottom_toBottomOf="@+id/boutonVerifierEvent"
+    app:layout_constraintEnd_toStartOf="@+id/boutonVerifierEvent"
+    app:srcCompat="@drawable/ic_task_fill0_wght400_grad0_opsz48" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/boutonDeconnexion"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:clickable="true"
+    android:visibility="invisible"
+    app:layout_constraintBottom_toTopOf="@+id/boutonNews"
+    app:layout_constraintEnd_toEndOf="@+id/boutonNews"
+    app:srcCompat="@drawable/ic_baseline_exit_to_app_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>
