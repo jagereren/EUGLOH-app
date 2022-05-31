@@ -1,2 +1,2 @@
 # projet_EUGLOH
-Le projet EUGLOH consiste à programmer une application Eugloh qui est la version Android du site Eugloh.eu.
+The EUGLOH project consists of programming a mobile version of the EUGLOH site, which connects 5 European universities and their students, in order to facilitate European exchanges and the follow-up of courses from other universities.
